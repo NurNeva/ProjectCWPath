@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+
+    background-image: linear-gradient(to right, rgb(98, 11, 98), rgb(82, 167, 158));
+}
+h1{
+    text-align: center;
+    font-family: 'Rubik Burned', system-ui;
+    color: white;
+    font-size:70px
+    
+}
+
+
+.card1{
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.156);
+    margin: 20px auto;
+    height: 250px;
+    padding: 10px;
+    border-radius: 5px;
+   box-shadow: 2px 2px 8px white;
+   overflow:visible;  /*Float ile yerleştirilen öğeleri içinde tutmak için */
+   transition: transform 0.5s ease;
+}
+
+p{
+    color: white;
+   max-width: 70em;
+   
+}
+
+
+img{
+   
+    width: 30%;
+    height: 210px;
+    float: left;
+    margin: 6px auto;
+    margin-right: 20px; /* Resimle paragraf arasına boşluk ekler */
+    overflow: hidden;
+    border-radius: 50%;
+  
+   
+}
+
+
+.image{
+
+    width: 800px;
+   
+    position: relative;
+    padding: 5px;
+    transition: transform 0.3s ease;
+
+}
+
+
+button:hover{
+    scale: 1.1;
+}
+
+button{
+    float: right;
+    background-color: darkgoldenrod;
+    color: bisque;
+    margin-top: 30px;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px;
+
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+
+h2{
+
+    color:rgba(255, 166, 0, 0.892);
+    font-size: 1.5rem;
+
+}
+
+.image-content{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+}
+
+.card1:hover {
+    transform: scale(1.1); /* Hover durumunda kartın büyüklüğünü arttırır */
+}
+
+.card1:hover .image {
+   /* transform: translateX(5%) scale(1.1);  Hover durumunda resmin sola kayarak ve büyüyerek içeriye doğru hareket etmesini sağlar */
+ transform:  translateX(-5%);
+   transition: transform 1.1s ease; 
+}
+
+
+.content{  /* paragrafa girinti verdim*/
+    text-indent: 30px;
+    position: relative;
+    padding: 10px;
+    padding-right: 50px;
+    box-sizing: border-box; 
+    transform-origin: bottom;
+    transition: transform 0.3s ease; 
+}
+.card1:hover .content {
+    transform: translateX(5%); /* Hover durumunda content div'inin sola kayarak içeriye doğru hareket etmesini sağlar */
+}
+
+
+
+
